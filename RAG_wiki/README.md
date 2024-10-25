@@ -16,6 +16,8 @@ This project is a knowledge retrieval system based on Retrieval-Augmented Genera
 - **Re-ranking**: The built-in Vikhr-Nemo re-ranker sorts final search results.
 - **Final Answer**: Returns a structured response based on the combined search output, enriched with insights from all available data.
 
+**Note:** The dataset is challenging as it consists of 20 articles about mathematicians, resulting in highly similar embeddings and overlapping vocabulary. This can impact the retrieval effectiveness, as similar lexical patterns make it harder for the model to distinguish contexts accurately. On a more diverse dataset with a broader range of topics, the embeddings would have better separation, likely improving model performance.
+
 ## To do
 Implement advanced chunking techniques such as Semantic Chunking or Late Interaction for improved retrieval quality
 Implement Auto-merging retrieval or Sentence-window retrieval
